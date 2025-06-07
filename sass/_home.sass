@@ -8,7 +8,7 @@
     display: grid
     gap: 200px
     grid-template-columns: auto auto
-    padding-top: 100px
+    padding-top: 250px
     &__imgandborder
         width: 400px
         position: relative
@@ -16,6 +16,8 @@
             width: 100%
             position: relative
             z-index: 2
+            box-shadow: 0px 2px 20px 2px lighten($fontblue, 0.10 )
+            border-radius: 25px
         .border
             position: absolute
             top: -5px
@@ -53,3 +55,64 @@
         &__developer
             color: lighten($fontblue, 0.2 )
             font-size: 40px
+
+.Faster
+    padding-top: 100px
+
+    &__mobileFaster
+        display: none
+
+    &__button
+        cursor: pointer
+        color: #ffffff
+        background-color: $cardblue
+        border: none
+        font-family: Montserrat
+        border-radius: 10px
+        width: 150px
+        height: 30px
+        margin-left: 120px
+        transition: 0.1s linear
+
+        &:hover
+            transform: scale(1.05)
+            background-color: $fontblue
+
++responsive($notebook)
+
+    .homesection
+        padding-inline: 10px
+
+    .home
+
+        grid-template-columns: auto
+        gap: 100px
+        justify-items: center
+
+        &__texts
+            margin-top: 100px
+            &__normal
+                display: grid
+                justify-content: center
+                justify-items: center
+
+            &__Iam
+                font-size: 30px
+
+            &__JoaoPaulo
+                font-size: 40px
+
+            &__normaltext
+                font-size: 26px
+                display: grid
+                text-align: center
+
+    .Faster
+        display: none
+
+        &__button
+            margin: 0
+
+        &__mobileFaster
+            display: block
+            padding: 0

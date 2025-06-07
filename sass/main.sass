@@ -2,11 +2,14 @@ $black: #0b0b0b
 $navblue: #101217
 $fontblue: #1A3C7D
 $cardblue: #101217
+$notebook: 1200px
+$tablet: 800px
+$mobile: 769px
 
 *
     margin: 0
 
-@mixin media-query($a)
+@mixin responsive($a)
 
     @media screen and ( max-width: $a )
         @content

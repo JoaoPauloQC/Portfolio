@@ -12,7 +12,7 @@
   display: grid;
   gap: 200px;
   grid-template-columns: auto auto;
-  padding-top: 100px;
+  padding-top: 250px;
 }
 .home__imgandborder {
   width: 400px;
@@ -22,6 +22,8 @@
   width: 100%;
   position: relative;
   z-index: 2;
+  box-shadow: 0px 2px 20px 2px rgb(26.0878145695, 60.2026490066, 125.4221854305);
+  border-radius: 25px;
 }
 .home__imgandborder .border {
   position: absolute;
@@ -59,6 +61,68 @@
   font-size: 40px;
 }
 
+.Faster {
+  padding-top: 100px;
+}
+.Faster__mobileFaster {
+  display: none;
+}
+.Faster__button {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #101217;
+  border: none;
+  font-family: Montserrat;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  margin-left: 120px;
+  transition: 0.1s linear;
+}
+.Faster__button:hover {
+  transform: scale(1.05);
+  background-color: #1A3C7D;
+}
+
+@media screen and (max-width: 1200px) {
+  .homesection {
+    padding-inline: 10px;
+  }
+  .home {
+    grid-template-columns: auto;
+    gap: 100px;
+    justify-items: center;
+  }
+  .home__texts {
+    margin-top: 100px;
+  }
+  .home__texts__normal {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+  .home__texts__Iam {
+    font-size: 30px;
+  }
+  .home__texts__JoaoPaulo {
+    font-size: 40px;
+  }
+  .home__texts__normaltext {
+    font-size: 26px;
+    display: grid;
+    text-align: center;
+  }
+  .Faster {
+    display: none;
+  }
+  .Faster__button {
+    margin: 0;
+  }
+  .Faster__mobileFaster {
+    display: block;
+    padding: 0;
+  }
+}
 .wrapper {
   max-width: 1200px;
   margin-right: auto;
@@ -102,6 +166,17 @@ ul li:hover::after {
   width: 100%;
 }
 
+@keyframes glowing {
+  0% {
+    box-shadow: 0px 0px 35px 50px rgba(27, 152, 224, 0.3);
+  }
+  50% {
+    box-shadow: 0px 0px 45px 60px rgba(27, 152, 224, 0.55);
+  }
+  100% {
+    box-shadow: 0px 0px 35px 50px rgba(27, 152, 224, 0.3);
+  }
+}
 .skills__title {
   padding-top: 200px;
   font-size: 40px;
@@ -131,6 +206,18 @@ ul li:hover::after {
 }
 .cards__card #reactimg {
   animation: rotate 5s linear infinite;
+}
+.cards__card__react {
+  position: relative;
+}
+.cards__card .glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  animation: glowing 5s linear infinite;
+  border-radius: 1000px;
 }
 
 .concepts {
@@ -210,6 +297,9 @@ ul li:hover::after {
 }
 .footer__right__card p {
   text-align: center;
+}
+.footer .svg {
+  fill: #1A3C7D;
 }
 
 @keyframes rotate {
