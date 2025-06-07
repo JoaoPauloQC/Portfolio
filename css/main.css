@@ -123,6 +123,48 @@
     padding: 0;
   }
 }
+@media screen and (max-width: 769px) {
+  .homesection {
+    padding-inline: 10px;
+  }
+  .home {
+    grid-template-columns: auto;
+    gap: 100px;
+    justify-items: center;
+  }
+  .home__texts {
+    margin-top: 100px;
+  }
+  .home__texts__normal {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+  .home__texts__Iam {
+    font-size: 15px;
+  }
+  .home__texts__JoaoPaulo {
+    font-size: 16px;
+  }
+  .home__texts__developer {
+    font-size: 32px;
+  }
+  .home__texts__normaltext {
+    font-size: 20px;
+    display: grid;
+    text-align: center;
+  }
+  .Faster {
+    display: none;
+  }
+  .Faster__button {
+    margin: 0;
+  }
+  .Faster__mobileFaster {
+    display: block;
+    padding: 0;
+  }
+}
 .wrapper {
   max-width: 1200px;
   margin-right: auto;
@@ -219,6 +261,12 @@ ul li:hover::after {
   animation: glowing 5s linear infinite;
   border-radius: 1000px;
 }
+@media screen and (max-width: 769px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
 
 .concepts {
   display: grid;
@@ -251,6 +299,16 @@ ul li:hover::after {
 .concepts__concept img {
   width: 50px;
   height: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .concepts__concept {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .concepts {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {
@@ -300,6 +358,19 @@ ul li:hover::after {
 }
 .footer .svg {
   fill: #1A3C7D;
+}
+@media screen and (max-width: 1200px) {
+  .footer__container {
+    padding: 40px 10px;
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+  .footer__left {
+    grid-template-columns: auto;
+  }
+  .footer .concepts__concept {
+    max-width: 100%;
+  }
 }
 
 @keyframes rotate {

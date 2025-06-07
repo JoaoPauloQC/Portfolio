@@ -44,3 +44,17 @@
 
     .svg
         fill: $fontblue
+
+    +responsive($notebook)
+        &__container
+            padding: 40px 10px
+            grid-template-columns: auto
+            gap: 20px
+
+        &__left
+            grid-template-columns: auto
+
+        .concepts
+
+            &__concept
+                max-width: 100%
