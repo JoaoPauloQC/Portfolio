@@ -1,0 +1,32 @@
+.header
+    background-color: $navblue
+    min-height: 60px
+    font-family: Montserrat
+
+nav
+    width: 1000px
+ul
+    padding: 0
+    max-width: 100%
+    display: flex
+    justify-content: space-between
+    list-style: none
+    text-decoration: none
+    color: #ffffff
+    font-size: 18px
+    padding: 20px 40px
+
+    li
+        cursor: pointer
+
+        &::after
+            content: ""
+            display: block
+            width: 0px
+            height: 2px
+            background: #0B0B0B
+            background: linear-gradient(68deg, rgba(11, 11, 11, 1) 0%, rgba(26, 60, 125, 1) 100%)
+            transition: 0.2s linear
+
+        &:hover::after
+            width: 100%

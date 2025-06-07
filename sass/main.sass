@@ -1,0 +1,25 @@
+$black: #0b0b0b
+$navblue: #101217
+$fontblue: #1A3C7D
+$cardblue: #101217
+
+*
+    margin: 0
+
+@mixin media-query($a)
+
+    @media screen and ( max-width: $a )
+        @content
+
+@import 'home'
+@import 'shared'
+@import 'header'
+@import 'cards'
+@import 'concepts'
+
+@keyframes rotate
+    0%
+        transform: rotate(0)
+
+    100%
+        transform: rotate(360deg)
