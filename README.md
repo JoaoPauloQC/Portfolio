@@ -11,7 +11,7 @@
 - Shared
 
   - [ ] Top %
-  - [ ]Bottom %
+  - [ ] Bottom %
 
 - Home
 
