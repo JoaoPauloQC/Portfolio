@@ -2,6 +2,9 @@ const IamList = ['Desenvolvedor', 'Estudante' , 'Designer']
 let i = 0
 const text = document.getElementById('changabletext')
 let rotate_index = 5
+let img_index = 0
+let banner_imgs = document.querySelectorAll('.banner-img')
+console.log(banner_imgs)
 
 function increment(a,list){
 
@@ -15,7 +18,7 @@ function increment(a,list){
 
 }
 
-setInterval(function(){
+if(text != null){ setInterval(function(){
     // console.log(IamList.length)
     // console.log('O i é' + i)
     if (increment(i,IamList)){
@@ -28,7 +31,7 @@ setInterval(function(){
     text.innerText = IamList[i]
 
 
-},1000)
+},1000)}
 
 function faster(){
     
@@ -68,4 +71,19 @@ function menuToogle(){
     }
 
 
+}
+
+function next(){
+    console.log(banner_imgs)
+    img_index += 1
+    console.log(img_index)
+    const img = document.getElementById('banner_img')
+    if(img_index > banner_imgs.length -1){
+        img.style.left = 0
+        img_index = 0
+    }
+    else{
+        img.style.left = (img_index * -400) + 'px'
+        console.log(img.style.left)
+    }
 }

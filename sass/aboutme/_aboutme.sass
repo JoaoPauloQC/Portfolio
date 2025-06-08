@@ -1,0 +1,60 @@
+.aboutme
+    font-family: Montserrat
+
+    padding-top: 150px
+    &__grid
+        display: grid
+        grid-template-columns: auto auto
+        gap: 100px
+
+    &__right
+        &__imgandborder
+            width: 320px
+            height: 320px
+            display: grid
+            grid-template-columns: auto
+            position: relative
+            &__img
+                width: min(320px,25vw)
+                display: grid
+                justify-items: center
+                align-items: center
+
+                img
+                    width: 300px
+                    z-index: 2
+                    border-radius: 100%
+
+            &__border
+                width: min(320px,32vw)
+                height: 320px
+                position: absolute
+                top: 0
+                z-index: 1
+                left: 0
+
+                border-radius: 100%
+                background: #0B0B0B
+                background: linear-gradient(68deg, rgba(11, 11, 11, 1) 0%, rgba(26, 60, 125, 1) 100%)
+
+        &__button
+            display: grid
+            text-align: center
+            width: 100%
+            justify-items: center
+            padding-top: 15px
+
+            button
+                width: 150px
+                height: 30px
+                background-color: $navblue
+                color: #ffffff
+                font-size: 16px
+                border: none
+                border-radius: 10px
+
+    &__text
+        margin-left: 25px
+        font-size: 14px
+        padding-top: 20px
+        color: #ffffff

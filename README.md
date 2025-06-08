@@ -34,10 +34,10 @@
   - [ ] JavaScript !
   - [ ] Responsive !
 
-- Formation
-  - [ ] Html !
-  - [ ] SASS !
-  - [ ] JavaScript !
+- About me
+  - [ ] Html %
+  - [x] SASS
+  - [ ] JavaScript %
   - [ ] Responsive !
 
 ## That shows my knowledges, what I am studying, fundamentals etc
