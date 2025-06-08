@@ -4,4 +4,42 @@
 - SASS
 - JavaScript
 
+## % = On progress
+
+## ! = Later
+
+- Shared
+
+  - Top %
+  - Bottom %
+
+- Home
+
+  - [x] Html
+  - [x] SASS
+  - [ ] JavaScript %
+  - [ ] Responsive %
+
+- Contact
+
+  - [ ] Html !
+  - [ ] SASS !
+  - [ ] JavaScript !
+  - [ ] Responsive !
+
+- Projects
+
+  - [ ] Html !
+  - [ ] SASS !
+  - [ ] JavaScript !
+  - [ ] Responsive !
+
+- Formation
+  - [ ] Html !
+  - [ ] SASS !
+  - [ ] JavaScript !
+  - [ ] Responsive !
+
 ## That shows my knowledges, what I am studying, fundamentals etc
+
+# See other projects on [my profile](https://github.com/JoaoPauloQC)

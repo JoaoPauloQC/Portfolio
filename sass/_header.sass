@@ -1,10 +1,39 @@
+@keyframes move
+    0%
+        opacity: 0
+        left: -100%
+
+    100%
+        opacity: 1
+        left: 0
+
 .header
     background-color: $navblue
     min-height: 60px
+    z-index: 2
     font-family: Montserrat
 
 nav
-    width: 1000px
+    width: min(1000px ,100%)
+    position: relative
+    z-index: 2
+    .menu_button
+        display: none
+        width: max-content
+
+        button
+            background: transparent
+            border: none
+            outline: none
+
+    +responsive($mobile)
+        display: grid
+        box-sizing: border-box
+        padding: 10px
+        justify-items: end
+        .menu_button
+            display: grid
+
 ul
     padding: 0
     max-width: 100%
@@ -15,6 +44,7 @@ ul
     color: #ffffff
     font-size: 18px
     padding: 20px 40px
+    +responsive($mobile)
 
     li
         cursor: pointer
@@ -30,3 +60,26 @@ ul
 
         &:hover::after
             width: 100%
+
+        +responsive($mobile)
+            width: 100%
+            box-sizing: border-box
+            background-color: #071530
+            padding: 15px
+
++responsive($mobile)
+    .inactive
+
+        display: none
+        transition: 0.2s linear
+
+    .active
+        display: block
+        position: absolute
+        top: 100%
+        left: 0
+        text-align: center
+        width: 100%
+        z-index: 1
+        padding: 0
+        animation: move 0.25s linear

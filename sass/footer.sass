@@ -45,7 +45,7 @@
     .svg
         fill: $fontblue
 
-    +responsive($notebook)
+    +responsive($mobile)
         &__container
             padding: 40px 10px
             grid-template-columns: auto
@@ -53,8 +53,9 @@
 
         &__left
             grid-template-columns: auto
+            row-gap: 40px
 
-        .concepts
-
-            &__concept
-                max-width: 100%
+        &__right
+            justify-items: center
+        &__card
+            width: 90vw

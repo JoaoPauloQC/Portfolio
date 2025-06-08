@@ -10,6 +10,7 @@
     grid-template-columns: auto auto
     padding-top: 250px
     &__imgandborder
+        max-width: 60vw
         width: 400px
         position: relative
         img
@@ -22,8 +23,8 @@
             position: absolute
             top: -5px
             left: -5px
-            width: 400px
-            height: 400px
+            width: 100%
+            height: 100%
             border: 4px solid $fontblue
             border-radius: 5px
             animation: rotate 5s linear infinite
@@ -136,16 +137,16 @@
                 justify-items: center
 
             &__Iam
-                font-size: 15px
+                font-size: min(15px,3.5vw)
 
             &__JoaoPaulo
-                font-size: 16px
+                font-size: min(20px,4vw)
 
             &__developer
-                font-size: 32px
+                font-size: min(32px,7.5vw)
 
             &__normaltext
-                font-size: 20px
+                font-size: min(20px,5vw)
                 display: grid
                 text-align: center
 

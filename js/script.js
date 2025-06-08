@@ -49,3 +49,23 @@ function faster(){
 
 
 }
+
+function menuToogle(){
+
+    const ul = document.getElementById('navul')
+    inative_class = document.getElementsByClassName('')
+    
+
+
+    if(ul.classList.contains('inactive')){
+        ul.classList.remove('inactive')
+        ul.classList.add('active')
+
+    }
+    else{
+        ul.classList.remove('active')
+        ul.classList.add('inactive')
+    }
+
+
+}
