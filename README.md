@@ -10,8 +10,8 @@
 
 - Shared
 
-  - Top %
-  - Bottom %
+  - [ ] Top %
+  - [ ]Bottom %
 
 - Home
 
