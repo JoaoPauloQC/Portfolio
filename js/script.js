@@ -102,9 +102,9 @@ function next(){
 
 function prev(){
     console.log(banner_imgs)
-    if (img_index > 0){
-        img_index -= 1
-    }
+    
+    img_index -= 1
+    
     console.log(img_index)
     
     const img = document.getElementById('banner_img')
@@ -113,9 +113,9 @@ function prev(){
     
     
     
-    if(img_index < 1){
+    if(img_index == -1){
         
-        img_index = banner_imgs.length-1
+        
         console.log(img_index)
         let i = 0
         while (i < banner_imgs.length){
