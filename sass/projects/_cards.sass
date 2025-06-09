@@ -1,0 +1,100 @@
+.Projects
+    font-family: Montserrat
+    padding-top: 150px
+
+    &__grid
+        display: grid
+        grid-template-columns: auto auto
+        justify-items: center
+
+    &__title
+        margin-left: auto
+        margin-right: auto
+        padding-bottom: 100px
+        color: #ffffff
+        width: max-content
+
+    &__card
+        width: 450px
+        height: 450px
+        background-color: $navblue
+        border-radius: 20px
+        &__video
+            width: 100%
+
+            video
+                width: 100%
+                overflow-y: hidden
+                border-top-left-radius: 20px
+                border-top-right-radius: 20px
+
+        &__bottom
+            padding: 15px
+
+        &__titlestatus
+
+            display: flex
+            gap: 12px
+            align-items: center
+            p
+                font-size: 32px
+                color: #ffffff
+
+            button
+                padding: 2.5px 10px
+                font-family: Montserrat
+                border-radius: 20px
+                height: 23px
+                font-size: 11.5px
+                border: none
+
+        &__text
+            font-size: 20px
+            color: #ffffff
+            padding-top: 20px
+            padding-inline: 10px
+
+.java
+    background-color: #FFB988
+    color: #FF7F24
+
+.on_progress
+    background-color: #FFDE2A80
+
+    color: #FFDD25
+
+.python
+    background-color: #004170
+    color: #FFDD25
+
+.complete
+    background-color: #0F2D1A80
+    color: #30B27F
+
++responsive($tablet)
+    .Projects
+        padding: 100px 10px
+
+        &__grid
+            grid-template-columns: auto
+            gap: 150px
+
+        &__card
+            width: 100%
+            height: max-content
+
+            &__bottom
+                padding-bottom: 25px
+                padding-inline: 2vw
+
+            &__titlestatus
+                gap: 2vw
+                p
+                    font-size: 7vw
+                button
+                    height: 5vw
+                    font-size: 2.5vw
+                    padding: 3px 18px
+
+            &__text
+                font-size: 5vw

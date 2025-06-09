@@ -45,6 +45,18 @@
     .svg
         fill: $fontblue
 
+    +responsive($notebook)
+        &__container
+            padding: 40px 10px
+            grid-template-columns: auto
+            gap: 20px
+            justify-items: center
+
+        &__right
+            width: 100%
+            display: grid
+            justify-items: center
+
     +responsive($mobile)
         &__container
             padding: 40px 10px

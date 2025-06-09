@@ -422,6 +422,19 @@ ul li:hover::after {
 .footer .svg {
   fill: #1A3C7D;
 }
+@media screen and (max-width: 1200px) {
+  .footer__container {
+    padding: 40px 10px;
+    grid-template-columns: auto;
+    gap: 20px;
+    justify-items: center;
+  }
+  .footer__right {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+}
 @media screen and (max-width: 769px) {
   .footer__container {
     padding: 40px 10px;
@@ -657,6 +670,115 @@ ul li:hover::after {
   }
 }
 
+.Projects {
+  font-family: Montserrat;
+  padding-top: 150px;
+}
+.Projects__grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+}
+.Projects__title {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+  color: #ffffff;
+  width: max-content;
+}
+.Projects__card {
+  width: 450px;
+  height: 450px;
+  background-color: #101217;
+  border-radius: 20px;
+}
+.Projects__card__video {
+  width: 100%;
+}
+.Projects__card__video video {
+  width: 100%;
+  overflow-y: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.Projects__card__bottom {
+  padding: 15px;
+}
+.Projects__card__titlestatus {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.Projects__card__titlestatus p {
+  font-size: 32px;
+  color: #ffffff;
+}
+.Projects__card__titlestatus button {
+  padding: 2.5px 10px;
+  font-family: Montserrat;
+  border-radius: 20px;
+  height: 23px;
+  font-size: 11.5px;
+  border: none;
+}
+.Projects__card__text {
+  font-size: 20px;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-inline: 10px;
+}
+
+.java {
+  background-color: #FFB988;
+  color: #FF7F24;
+}
+
+.on_progress {
+  background-color: rgba(255, 222, 42, 0.5019607843);
+  color: #FFDD25;
+}
+
+.python {
+  background-color: #004170;
+  color: #FFDD25;
+}
+
+.complete {
+  background-color: rgba(15, 45, 26, 0.5019607843);
+  color: #30B27F;
+}
+
+@media screen and (max-width: 1000px) {
+  .Projects {
+    padding: 100px 10px;
+  }
+  .Projects__grid {
+    grid-template-columns: auto;
+    gap: 150px;
+  }
+  .Projects__card {
+    width: 100%;
+    height: max-content;
+  }
+  .Projects__card__bottom {
+    padding-bottom: 25px;
+    padding-inline: 2vw;
+  }
+  .Projects__card__titlestatus {
+    gap: 2vw;
+  }
+  .Projects__card__titlestatus p {
+    font-size: 7vw;
+  }
+  .Projects__card__titlestatus button {
+    height: 5vw;
+    font-size: 2.5vw;
+    padding: 3px 18px;
+  }
+  .Projects__card__text {
+    font-size: 5vw;
+  }
+}
 @keyframes rotate {
   0% {
     transform: rotate(0);
