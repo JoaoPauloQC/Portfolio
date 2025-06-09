@@ -99,3 +99,38 @@ function next(){
         }
     }
 }
+
+function prev(){
+    console.log(banner_imgs)
+    if (img_index > 0){
+        img_index -= 1
+    }
+    console.log(img_index)
+    
+    const img = document.getElementById('banner_img')
+    let width = window.innerWidth
+
+    
+    
+    
+    if(img_index < 1){
+        
+        img_index = banner_imgs.length-1
+        console.log(img_index)
+        let i = 0
+        while (i < banner_imgs.length){
+            next()
+            i++
+        } 
+    }
+    else{
+        if (width > 768){
+            img.style.left = (img_index * +400) + 'px'
+            console.log(img.style.left)
+        }
+        else{
+            img.style.left = (img_index * +((width/5)*2)) + 'px'
+            console.log(img.style.left)
+        }
+    }
+}
