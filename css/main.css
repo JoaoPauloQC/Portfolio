@@ -501,6 +501,38 @@ ul li:hover::after {
   color: #ffffff;
 }
 
+@media screen and (max-width: 769px) {
+  .aboutme__grid {
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .aboutme__right__imgandborder__img {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .aboutme__right__imgandborder__img img {
+    max-width: 100%;
+  }
+  .aboutme__right__imgandborder__border {
+    width: 100%;
+    height: 100%;
+  }
+  .aboutme__text {
+    margin-left: 25px;
+    font-size: 10px;
+    padding-top: 20px;
+    color: #ffffff;
+  }
+  .aboutme__button button {
+    width: 150px;
+    height: 30px;
+    background-color: #101217;
+    color: #ffffff;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+  }
+}
 .bartitle {
   display: flex;
   gap: 10px;
@@ -517,6 +549,14 @@ ul li:hover::after {
   color: #ffffff;
   font-size: 28px;
   font-family: Montserrat;
+}
+@media screen and (max-width: 769px) {
+  .bartitle {
+    margin-left: 5vw;
+  }
+  .bartitle .title {
+    margin-left: 10px;
+  }
 }
 
 .history__banner {
@@ -559,6 +599,30 @@ ul li:hover::after {
 .history__banner__arrow button:hover img {
   transform: scale(1.05);
 }
+@media screen and (max-width: 769px) {
+  .history__banner__grid {
+    display: grid;
+    grid-template-columns: auto 40vw auto;
+  }
+  .history__banner__imgspace {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height: 40vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .history__banner__imgspace__img {
+    display: flex;
+    width: 40vw;
+    height: 40vw;
+    transition: 0.2s linear;
+    position: absolute;
+  }
+  .history__banner__imgspace img {
+    width: 100%;
+  }
+}
 
 .history {
   padding-top: 150px;
@@ -581,6 +645,16 @@ ul li:hover::after {
   grid-template-columns: auto auto auto;
   padding-inline: 5px;
   justify-content: space-around;
+}
+@media screen and (max-width: 769px) {
+  .formation__grid {
+    padding-top: 75px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: auto;
+    padding-inline: 5px;
+    justify-content: space-around;
+  }
 }
 
 @keyframes rotate {
