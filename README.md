@@ -38,7 +38,11 @@
   - [ ] Html %
   - [x] SASS
   - [ ] JavaScript %
-  - [ ] Responsive !
+  - [ ] Responsive %
+
+### Projeted on Figma
+
+  <img src="assets/image 3.png">
 
 ## That shows my knowledges, what I am studying, fundamentals etc
 
