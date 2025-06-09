@@ -77,13 +77,25 @@ function next(){
     console.log(banner_imgs)
     img_index += 1
     console.log(img_index)
+    
     const img = document.getElementById('banner_img')
+    let width = window.innerWidth
+
+    
+    
+    
     if(img_index > banner_imgs.length -1){
         img.style.left = 0
         img_index = 0
     }
     else{
-        img.style.left = (img_index * -400) + 'px'
-        console.log(img.style.left)
+        if (width > 768){
+            img.style.left = (img_index * -400) + 'px'
+            console.log(img.style.left)
+        }
+        else{
+            img.style.left = (img_index * -((width/5)*2)) + 'px'
+            console.log(img.style.left)
+        }
     }
 }
