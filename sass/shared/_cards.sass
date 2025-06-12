@@ -25,13 +25,31 @@
     justify-items: center
 
     &__card
+        position: relative
         width: 205px
         height: 250px
         display: grid
+        opacity: 0
         align-items: center
         justify-content: center
         background-color: $cardblue
         border-radius: 10px
+        &:nth-child(1)
+            animation: bottomtonormal linear forwards
+            animation-timeline: view()
+            animation-range: entry 0% cover 30%
+        &:nth-child(2)
+            animation: bottomtonormal linear forwards
+            animation-timeline: view()
+            animation-range: entry 0% cover 40%
+        &:nth-child(3)
+            animation: bottomtonormal linear forwards
+            animation-timeline: view()
+            animation-range: entry 0% cover 50%
+        &:nth-child(4)
+            animation: bottomtonormal linear forwards
+            animation-timeline: view()
+            animation-range: entry 0% cover 60%
 
         img
             width: 150px

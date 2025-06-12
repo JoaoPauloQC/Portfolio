@@ -2,6 +2,24 @@
   margin: 0;
 }
 
+@keyframes bottomtonormal {
+  0% {
+    opacity: 0;
+    bottom: -100px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes opacitytonormal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .concepts {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -29,6 +47,21 @@
   background-color: #101217;
   font-family: Montserrat;
   font-size: 16px;
+}
+.concepts__concept:nth-child(1), .concepts__concept:nth-child(2) {
+  animation: opacitytonormal linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.concepts__concept:nth-child(3), .concepts__concept:nth-child(4) {
+  animation: opacitytonormal linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%;
+}
+.concepts__concept:nth-child(5), .concepts__concept:nth-child(6) {
+  animation: opacitytonormal linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 .concepts__concept img {
   width: 50px;
@@ -276,6 +309,10 @@ ul li a {
   text-decoration: none;
   color: #ffffff;
 }
+ul li .active {
+  font-size: 22px;
+  color: #1A3C7D;
+}
 ul li::after {
   content: "";
   display: block;
@@ -341,13 +378,35 @@ ul li:hover::after {
   justify-items: center;
 }
 .cards__card {
+  position: relative;
   width: 205px;
   height: 250px;
   display: grid;
+  opacity: 0;
   align-items: center;
   justify-content: center;
   background-color: #101217;
   border-radius: 10px;
+}
+.cards__card:nth-child(1) {
+  animation: bottomtonormal linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.cards__card:nth-child(2) {
+  animation: bottomtonormal linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.cards__card:nth-child(3) {
+  animation: bottomtonormal linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+.cards__card:nth-child(4) {
+  animation: bottomtonormal linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
 }
 .cards__card img {
   width: 150px;
@@ -389,13 +448,17 @@ ul li:hover::after {
   border-radius: 50px;
   display: flex;
   padding-left: 20px;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 .footer__card p {
   color: #ffffff;
-  font-size: 10px;
+  font-size: 14px;
   font-family: Montserrat;
+}
+.footer__card p a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .footer__card img {
   width: 30px;

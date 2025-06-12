@@ -5,6 +5,42 @@ let rotate_index = 5
 let img_index = 0
 let banner_imgs = document.querySelectorAll('.banner-img')
 console.log(banner_imgs)
+console.log(document.getElementsByClassName('Projects'))
+let page = ''
+getCurrentpage()
+
+function getCurrentpage(){
+
+    const checkpage = (classe) => {
+        if (document.getElementsByClassName(classe).length > 0){
+            return true
+        }
+        return false
+    }    
+
+    if(checkpage("Projects")){
+        console.log(document.getElementsByClassName('Projects').length)
+        page = 'Projects'
+       
+        
+    }
+    else if(checkpage('home')){
+        page= 'home'
+        
+    }
+
+    console.log(page)
+    
+    function addActive(a){
+        tobeactive = document.getElementById(a.toLowerCase())
+        
+        tobeactive.classList.add('active')
+    }
+
+    addActive(page)
+
+}
+
 
 function increment(a,list){
 
