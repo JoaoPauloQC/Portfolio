@@ -681,6 +681,7 @@ ul li:hover::after {
     grid-template-columns: auto 40vw auto;
   }
   .history__banner__imgspace {
+    border-radius: 20px;
     display: grid;
     justify-items: center;
     width: 100%;
@@ -694,8 +695,10 @@ ul li:hover::after {
     height: 40vw;
     transition: 0.2s linear;
     position: absolute;
+    border-radius: 20px;
   }
   .history__banner__imgspace img {
+    border-radius: 25px;
     width: 100%;
   }
 }

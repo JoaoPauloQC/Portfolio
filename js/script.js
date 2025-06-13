@@ -24,6 +24,10 @@ function getCurrentpage(){
        
         
     }
+    else if(checkpage('aboutme')){
+        page= 'aboutme'
+        
+    }
     else if(checkpage('home')){
         page= 'home'
         
@@ -125,6 +129,7 @@ function next(){
         img_index = 0
     }
     else{
+        console.log('else')
         if (width > 768){
             img.style.left = (img_index * -400) + 'px'
             console.log(img.style.left)
