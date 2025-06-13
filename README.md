@@ -29,21 +29,26 @@
 
 - Projects
 
-  - [ ] Html !
-  - [ ] SASS !
+  - [x] Html !
+  - [x] SASS !
   - [ ] JavaScript !
   - [ ] Responsive !
 
 - About me
-  - [ ] Html %
+  - [x] Html %
   - [x] SASS
   - [ ] JavaScript %
   - [ ] Responsive %
 
 ### Projeted on Figma
 
+<br>
   <img src="assets/image 3.png">
+<br>
 
-## That shows my knowledges, what I am studying, fundamentals etc
+### That project shows my knowledges, what I am studying, fundamentals etc
+
+<br>
+<br>
 
 # See other projects on [my profile](https://github.com/JoaoPauloQC)
