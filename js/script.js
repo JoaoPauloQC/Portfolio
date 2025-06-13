@@ -38,7 +38,7 @@ function getCurrentpage(){
     function addActive(a){
         tobeactive = document.getElementById(a.toLowerCase())
         
-        tobeactive.classList.add('active')
+        tobeactive.classList.add('liactive')
     }
 
     addActive(page)
