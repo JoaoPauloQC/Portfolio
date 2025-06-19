@@ -833,12 +833,41 @@ ul li:hover::after {
     gap: 150px;
   }
   .Projects__card {
-    width: 100%;
+    width: 90%;
+    max-width: 700px;
     height: max-content;
   }
   .Projects__card__bottom {
     padding-bottom: 25px;
     padding-inline: 2vw;
+  }
+  .Projects__card__titlestatus {
+    gap: 2vw;
+  }
+  .Projects__card__titlestatus p {
+    font-size: 3rem;
+  }
+  .Projects__card__titlestatus button {
+    height: 5vw;
+    font-size: 2.5vw;
+    padding: 3px 18px;
+  }
+  .Projects__card__text {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .Projects {
+    padding: 100px 10px;
+  }
+  .Projects__grid {
+    grid-template-columns: auto;
+    gap: 150px;
+  }
+  .Projects__card {
+    width: 100%;
+    max-width: 700px;
+    height: max-content;
   }
   .Projects__card__titlestatus {
     gap: 2vw;
