@@ -1,0 +1,63 @@
+.work
+    padding-top: 200px
+    font-family: Montserrat
+    &__top
+        &__grid
+            display: grid
+            grid-template-columns: 1fr 1fr
+            justify-content: space-between
+            +responsive($tablet)
+                grid-template-columns: auto
+                justify-content: center
+                gap: 100px
+
+        &__left
+            display: grid
+            align-items: center
+            color: white
+            h1
+                font-size: 2rem
+                +responsive($iphones)
+                    font-size: 1.5rem
+            p
+                font-size: 1rem
+                +responsive($tablet)
+                    text-align: center
+                +responsive($iphones)
+                    font-size: 0.75rem
+
+            a
+                text-decoration: none
+
+        &__right
+            display: grid
+            justify-items: end
+            +responsive($tablet)
+                justify-items: center
+
+.phone
+    display: grid
+    border: 7.5px solid #0000005e
+    box-sizing: border-box
+    border-radius: 20px
+    position: relative
+    img
+        border-radius: 20px
+        perspective: 100px
+        +responsive($iphones)
+            width: 300px
+
+    &::after
+        display: block
+        position: absolute
+        content: ""
+        width: 100px
+        border-radius: 10px
+        bottom: 10px
+        left: 50%
+        transform: translateX(-50%)
+        height: 5px
+        background-color: white
+
+.whatsapp
+    color: #009921

@@ -32,6 +32,9 @@ function getCurrentpage(){
         page= 'home'
         
     }
+    else if(checkpage('work')){
+        page= 'work'
+    }
 
     console.log(page)
     

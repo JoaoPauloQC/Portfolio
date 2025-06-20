@@ -88,7 +88,7 @@
   display: grid;
   gap: 200px;
   grid-template-columns: auto auto;
-  padding-top: 250px;
+  padding-top: 300px;
 }
 .home__imgandborder {
   max-width: 60vw;
@@ -363,7 +363,7 @@ ul li:hover::after {
   }
 }
 .skills__title {
-  padding-top: 200px;
+  padding-top: 340px;
   font-size: 40px;
   width: 100%;
   padding-bottom: 90px;
@@ -412,7 +412,7 @@ ul li:hover::after {
   width: 150px;
 }
 .cards__card #reactimg {
-  animation: rotate 5s linear infinite;
+  animation: rotate 7s linear infinite;
 }
 .cards__card__react {
   position: relative;
@@ -884,6 +884,94 @@ ul li:hover::after {
     font-size: 5vw;
   }
 }
+.work {
+  padding-top: 200px;
+  font-family: Montserrat;
+}
+.work__top__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  .work__top__grid {
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+.work__top__left {
+  display: grid;
+  align-items: center;
+  color: white;
+}
+.work__top__left h1 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 450px) {
+  .work__top__left h1 {
+    font-size: 1.5rem;
+  }
+}
+.work__top__left p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1000px) {
+  .work__top__left p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .work__top__left p {
+    font-size: 0.75rem;
+  }
+}
+.work__top__left a {
+  text-decoration: none;
+}
+.work__top__right {
+  display: grid;
+  justify-items: end;
+}
+@media screen and (max-width: 1000px) {
+  .work__top__right {
+    justify-items: center;
+  }
+}
+
+.phone {
+  display: grid;
+  border: 7.5px solid rgba(0, 0, 0, 0.368627451);
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+}
+.phone img {
+  border-radius: 20px;
+  perspective: 100px;
+}
+@media screen and (max-width: 450px) {
+  .phone img {
+    width: 300px;
+  }
+}
+.phone::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100px;
+  border-radius: 10px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  background-color: white;
+}
+
+.whatsapp {
+  color: #009921;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
