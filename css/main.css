@@ -322,8 +322,19 @@ ul li::after {
   background: linear-gradient(68deg, rgb(11, 11, 11) 0%, rgb(26, 60, 125) 100%);
   transition: 0.2s linear;
 }
+@media screen and (max-width: 769px) {
+  ul li::after {
+    margin-left: auto;
+    transform: translateX(-50%);
+  }
+}
 ul li:hover::after {
   width: 100%;
+}
+@media screen and (max-width: 769px) {
+  ul li:hover::after {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 769px) {
   ul li {
