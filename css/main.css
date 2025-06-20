@@ -908,6 +908,11 @@ ul li:hover::after {
 .work__top__left h1 {
   font-size: 2rem;
 }
+@media screen and (max-width: 1000px) {
+  .work__top__left h1 {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 450px) {
   .work__top__left h1 {
     font-size: 1.5rem;
