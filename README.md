@@ -10,34 +10,34 @@
 
 - Shared
 
-  - [ ] Top %
+  - [x] Top %
   - [ ] Bottom %
 
 - Home
 
   - [x] Html
   - [x] SASS
-  - [ ] JavaScript %
-  - [ ] Responsive %
+  - [x] JavaScript %
+  - [x] Responsive %
 
-- Contact
+- Work
 
-  - [ ] Html !
-  - [ ] SASS !
-  - [ ] JavaScript !
-  - [ ] Responsive !
+  - [x] Html
+  - [x] SASS
+  - [x] JavaScript
+  - [x] Responsive
 
 - Projects
 
-  - [x] Html !
-  - [x] SASS !
-  - [ ] JavaScript !
-  - [ ] Responsive !
+  - [x] Html
+  - [x] SASS
+  - [x] JavaScript
+  - [x] Responsive
 
 - About me
-  - [x] Html %
+  - [] Html %
   - [x] SASS
-  - [ ] JavaScript %
+  - [] JavaScript %
   - [ ] Responsive %
 
 ### Projeted on Figma
