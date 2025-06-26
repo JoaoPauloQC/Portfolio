@@ -11,7 +11,7 @@
 - Shared
 
   - [x] Top %
-  - [ ] Bottom %
+  - [x] Bottom %
 
 - Home
 
@@ -35,9 +35,9 @@
   - [x] Responsive
 
 - About me
-  - [] Html %
+  - [x] Html %
   - [x] SASS
-  - [] JavaScript %
+  - [ ] JavaScript %
   - [ ] Responsive %
 
 ### Projeted on Figma
@@ -46,7 +46,7 @@
   <img src="assets/image 3.png">
 <br>
 
-### That project shows my knowledges, what I am studying, fundamentals etc
+### That project shows my knowledges, what I am studying, etc
 
 <br>
 <br>
