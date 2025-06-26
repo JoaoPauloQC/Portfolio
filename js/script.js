@@ -1,4 +1,4 @@
-const IamList = ['Desenvolvedor', 'Estudante' , 'Designer']
+const IamList = ['Developer', 'Student' , 'Designer']
 let i = 0
 const text = document.getElementById('changabletext')
 let rotate_index = 5
