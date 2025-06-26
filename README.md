@@ -10,15 +10,15 @@
 
 - Shared
 
-  - [x] Top %
-  - [x] Bottom %
+  - [x] Top
+  - [x] Bottom
 
 - Home
 
   - [x] Html
   - [x] SASS
-  - [x] JavaScript %
-  - [x] Responsive %
+  - [x] JavaScript
+  - [x] Responsive
 
 - Work
 
@@ -35,7 +35,7 @@
   - [x] Responsive
 
 - About me
-  - [x] Html %
+  - [x] Html
   - [x] SASS
   - [ ] JavaScript %
   - [ ] Responsive %
